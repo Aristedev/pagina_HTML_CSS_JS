@@ -8,6 +8,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+    scroll-behavior: smooth;
+}
 .contenedor {
     width: 90%; /* Ocupa el 90 % del ancho del contenido */
     max-width: 1200px; /* Límite de 1200px */
@@ -23,4 +26,14 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
 }
