@@ -64,7 +64,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     /* transition: transform .3s ease-in-out; */
-    transform: translate(100%);
+    transform: translate(110%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
@@ -321,7 +321,7 @@ footer {
 
     /* Galería */
     .img-galeria {
-        width: 45%;
+        width: 45%; /* Las imagenes se muestran en una columna */
     }
 
     /*Expertos*/
@@ -339,6 +339,10 @@ footer {
         justify-content: space-evenly;
     }
 
+    .social-media-icon {
+        margin-left: 0; /* evitamos que los circulos de los iconos no cambien*/
+    }
+
     .social-media i {
         margin-left: 0;
     }
@@ -351,5 +355,39 @@ footer {
 }
 
 @media screen and (max-width:500px) {
-    
+    .menu-navegacion {
+        width: 65vw;
+    }
+
+    .hamburguer {
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    /* Ventana para Mostrar imagenes */
+    .agregar-imagen {
+        width: 95%;
+    }
+
+    /* Galería */
+    .img-galeria {
+        width: 95%; /* Las imagenes se muestran en una columna*/
+    }
+
+    /*Footer o Pie de Página*/
+    .social-media {
+        width: 100%; /* Utilizamos el espacio que tenemos disponible*/
+    }
+
+    .contact-us {
+        width: 90%;
+    }
 }
