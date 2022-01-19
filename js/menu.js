@@ -7,11 +7,17 @@ console.log(hamburger);
 
 // Creamos un evento con 'hamburger'
 hamburger.addEventListener('click', () => {
-    // alert("clic")
-    menu.classList.toggle("spread") // menu desplegable
+    // alert("clic") // test
+    menu.classList.toggle('spread') // menu desplegable
 });
 
-// Creamos un evneto cuando se haga 'click' la ventana
-window.addEventListener('click', e => {
-    console.log(e.target);
-})
+// Creamos un evento cuando se haga 'click' la ventana
+window.addEventListener('click', event => {
+    // console.log(event.target); // test
+    if (menu.classList.contains('spread') // Solo si contiene a 'spread' en menu
+        && event.target != menu && event.target != hamburger){ // event.target != hamburger -> evitar que se abra y cierre instantaneamente
+        
+        menu.classList.toggle('spread');
+    }
+    // Cierra el menu cuando se da 'click' en los enlaces
+});
