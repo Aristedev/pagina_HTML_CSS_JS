@@ -64,8 +64,8 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* transition: transform .3s ease-in-out; */
     transform: translate(110%);
+    transition: transform .3s ease-in-out; /* Presentación suave del menu de navegación*/
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
