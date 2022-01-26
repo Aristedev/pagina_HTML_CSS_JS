@@ -1,7 +1,7 @@
 // Seleccionamos las clases del HTML
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu-navegacion');
-
+// Test:
 // console.log(menu);
 // console.log(hamburger);
 
@@ -11,7 +11,7 @@ hamburger.addEventListener('click', () => {
     menu.classList.toggle('spread') // menu desplegable
 });
 
-// Creamos un evento cuando se haga 'click' la ventana
+// Creamos un evento cuando se haga 'click' en la ventana
 window.addEventListener('click', event => {
     // console.log(event.target); // test
     if (menu.classList.contains('spread') // Solo si contiene a 'spread' en menu
